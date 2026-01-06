@@ -6,4 +6,7 @@
 
 ## Match people who may belong to same family
 
+## Prioritize vulnerable individuals (children, elderly, injured)
+
+## Give relief workers real-time, reliable data
 
