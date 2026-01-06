@@ -1,6 +1,10 @@
 # Project Hopeline
 Disaster Relief and Family Reconnection System - This project focuses on reuniting families and restoring dignity and hope, not just technical complexity.
 
+
+> Your code may be the difference between someone feeling lost and someone feeling found.
+
+
 ## Prerequisites
 Make sure you have:
 - WSL installed (WSL 2 recommended)
