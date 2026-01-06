@@ -1,5 +1,5 @@
 # Project Hopeline
-Disaster Relief and Family Reconnection System
+Disaster Relief and Family Reconnection System - This project focuses on reuniting families and restoring dignity and hope, not just technical complexity.
 
 ## Prerequisites
 Make sure you have:
