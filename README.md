@@ -26,3 +26,11 @@ source:
 - [Generate SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 - [Add SSH key to Github Account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+## Make Commands
+
+| Command      | Description             |
+| ------------ | ----------------------- |
+| `make run`   | Run the server          |
+| `make build` | Build the binary        |
+| `make clean` | Remove the built binary |
