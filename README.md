@@ -11,9 +11,17 @@ Make sure you have:
 - A Linux distro installed (e.g. Ubuntu)
 - Go installed inside WSL
 - Git installed inside WSL
-- Make installed inside WSL
 
 Source: https://learn.microsoft.com/en-us/windows/wsl/install
+
+Build essentials
+- sudo apt-get update
+- sudo apt-get upgrade
+- sudo apt-get install build-essential -y
+- sudo snap install go --classic
+- git clone https://github.com/illusioniststg/hopeline.git
+- cd hopeline
+- make run
 
 ## Github Setup
 
