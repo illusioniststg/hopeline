@@ -1,3 +1,3 @@
 module github.com/illusioniststg/hopeline
 
-go 1.18.1
+go 1.25.3
