@@ -20,13 +20,10 @@ func main() {
 	router.GET("/ping", pong)
 
 	router.GET("/data/survivors", data.GetSurvivors)
-	// http://localhost:8080/assign?survivor_id=123&boat_id=boatA
 	router.GET("/assign", planning.AssignBoat)
-	// http://localhost:8080/search
 	router.POST("/search", identity.SearchPerson)
-	// http://localhost:8080/search
 	router.POST("/locs", identity.GetLocs)
 	router.POST("/validate", execution.Validate)
 	router.POST("/handover", execution.Handover)
-	router.Run() // listens on 0.0.0.0:8080 by default
+	router.Run()
 }
