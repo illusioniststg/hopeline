@@ -27,5 +27,6 @@ func main() {
 	// http://localhost:8080/search
 	router.POST("/locs", identity.GetLocs)
 	router.POST("/validate", execution.Validate)
+	router.POST("/handover", execution.Handover)
 	router.Run() // listens on 0.0.0.0:8080 by default
 }

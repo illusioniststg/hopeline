@@ -1,6 +1,5 @@
 package domain
 
-
 type ValidateInputRequest struct {
 	BoatID string `json:"boat_id"`
 	ShelterID string `json:"shelter_id"`
