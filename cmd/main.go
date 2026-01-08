@@ -3,9 +3,9 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/illusioniststg/hopeline/internal/data"
+	"github.com/illusioniststg/hopeline/internal/execution"
 	"github.com/illusioniststg/hopeline/internal/identity"
 	"github.com/illusioniststg/hopeline/internal/planning"
-	"github.com/illusioniststg/hopeline/internal/execution"
 	"github.com/illusioniststg/hopeline/internal/viz"
 )
 
@@ -24,8 +24,9 @@ func main() {
 	router.GET("/assign", planning.AssignBoat)
 	// http://localhost:8080/search
 	router.POST("/search", identity.SearchPerson)
-	// http://localhost:8080/search
+	// http://localhost:8080/locs
 	router.POST("/locs", identity.GetLocs)
+	// http://localhost:8080/validate
 	router.POST("/validate", execution.Validate)
 	// http://localhost:8080/metrics/summary
 	router.GET("/metrics/summary", viz.GetKPISummary)
