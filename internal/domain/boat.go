@@ -1,9 +1,10 @@
 package domain
 
 type Boat struct {
-    ID           string `json:"id" db:"id"`
-    Name         string `json:"name" db:"name"`
-    Capacity     int64  `json:"capacity" db:"capacity"`
-    Availability int64  `json:"availability" db:"availability"`
-    UpdatedAt    string `json:"updated_at" db:"updated_at"`
+	ID           string `json:"id" db:"id"`
+	Name         string `json:"name" db:"name"`
+	Capacity     int64  `json:"capacity" db:"capacity"`
+	Availability int64  `json:"availability" db:"availability"`
+	UpdatedAt    string `json:"updated_at" db:"updated_at"`
+	IsAssigned   bool   `json:"is_assigned" db:"is_assigned"`
 }

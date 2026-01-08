@@ -17,5 +17,5 @@ type Survivor struct {
 }
 
 type SurvivorSearchRequest struct {
-	Phone string `json:"phone"`
+	Phone string `json:"phone" form:"phone"`
 }
