@@ -1,18 +1,20 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
-	"github.com/illusioniststg/hopeline/internal/routeplanning"
+	 "github.com/gin-gonic/gin"
+	 "github.com/illusioniststg/hopeline/internal/planning"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Project Hopeline!")
-}
+func pong(c *gin.Context) {
+    c.JSON(200, gin.H{
+      "message": "pong from server",
+    })
+  }
 
 func main() {
-	http.HandleFunc("/assign_boat", routeplanning.AssignBoat)
-
-	fmt.Println("Server running at http://localhost:8080")
-	http.ListenAndServe(":8080", nil)
+	router := gin.Default()
+	router.GET("/ping", pong)
+	// http://localhost:8080/assign?survivor_id=123&boat_id=boatA
+	router.GET("/assign", planning.AssignBoat)
+	router.Run() // listens on 0.0.0.0:8080 by default
 }
