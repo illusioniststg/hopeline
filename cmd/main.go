@@ -5,6 +5,7 @@ import (
 	"github.com/illusioniststg/hopeline/internal/data"
 	"github.com/illusioniststg/hopeline/internal/identity"
 	"github.com/illusioniststg/hopeline/internal/planning"
+	"github.com/illusioniststg/hopeline/internal/execution"
 )
 
 func pong(c *gin.Context) {
@@ -25,5 +26,6 @@ func main() {
 	router.POST("/search", identity.SearchPerson)
 	// http://localhost:8080/search
 	router.POST("/locs", identity.GetLocs)
+	router.POST("/validate", execution.Validate)
 	router.Run() // listens on 0.0.0.0:8080 by default
 }
