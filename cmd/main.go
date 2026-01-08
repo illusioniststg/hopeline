@@ -20,7 +20,7 @@ func main() {
 	router := gin.Default()
 	router.GET("/ping", pong)
 	router.GET("/data/survivors", data.GetSurvivors)
-	// http://localhost:8080/assign?survivor_id=123&boat_id=boatA
+	// http://localhost:8080/assign?phone=05792219224
 	router.GET("/assign", planning.AssignBoat)
 	// http://localhost:8080/search
 	router.POST("/search", identity.SearchPerson)
