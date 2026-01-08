@@ -10,7 +10,7 @@ import (
 )
 
 func SearchPerson(c *gin.Context) {
-	var req domain.SurvivorSearchRequest
+	var req domain.SurvivorSearchRequest // return phone number in request
 	if err := c.ShouldBind(&req); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
