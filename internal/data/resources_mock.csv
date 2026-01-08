@@ -1,0 +1,4 @@
+shelter_id,latitude,longitude,capacity,current_occupancy,status
+S001,26.85,94.62,200,150,ACTIVE
+S002,26.95,94.55,500,480,ACTIVE
+S003,26.75,94.7,100,100,FULL
