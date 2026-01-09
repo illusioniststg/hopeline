@@ -36,11 +36,14 @@ func main() {
 
 	planGroup := api.Group("/plan")
 	{
-		// http://localhost:8080/assign?phone=05792219224
+		// http://localhost:8080/api/plan/assign
 
 		planGroup.POST("/assign", planning.AssignBoat)
-		// http://localhost:8080/route
+		// http://localhost:8080/api/plan/route
 		planGroup.POST("/route", planning.MultiPickupRoute)
+		// http://localhost:8080/api/plan/distance
+		planGroup.POST("/distance", planning.DistanceAlgo)
+
 	}
 	identityGroup := api.Group("/identity")
 	{
