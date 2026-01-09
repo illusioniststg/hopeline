@@ -26,5 +26,6 @@ func main() {
 	router.POST("/validate", execution.Validate)
 	router.POST("/handover", execution.Handover)
 	router.GET("/metrics/summary", viz.GetKPISummary)
+	router.GET("/locations", viz.GetLocations)
 	router.Run()
 }
